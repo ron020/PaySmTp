@@ -8,8 +8,10 @@ import pyfiglet
 import threading
 import http.server
 import socketserver
-
-
+"""
+PaySmTp(Payload SMTP)
+Use: Youtube: 
+"""
 
 
 def banner():
