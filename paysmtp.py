@@ -10,7 +10,7 @@ import http.server
 import socketserver
 """
 PaySmTp(Payload SMTP)
-Use: Youtube: https://youtu.be/maHX9gcie8E
+Youtube: https://youtu.be/maHX9gcie8E
 """
 
 
